@@ -89,8 +89,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Discover startups with validated product-market fit and real revenue 
-                  traction through enterprise partnerships.
+                  Proprietary pipeline from enterprise-validated problem statements and pilots.
                 </CardDescription>
               </CardContent>
             </Card>
