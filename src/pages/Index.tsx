@@ -60,7 +60,7 @@ const Index = () => {
           </section>
 
           <section className="grid gap-8 md:grid-cols-3">
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-all duration-300 animate-bubble-in hover:animate-float hover:shadow-2xl hover:scale-105 hover:-translate-y-2">
               <CardHeader>
                 <CardTitle className="text-2xl">For Startups</CardTitle>
               </CardHeader>
@@ -72,7 +72,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-all duration-300 animate-bubble-in [animation-delay:150ms] hover:animate-float hover:shadow-2xl hover:scale-105 hover:-translate-y-2">
               <CardHeader>
                 <CardTitle className="text-2xl">For Corporates</CardTitle>
               </CardHeader>
@@ -84,7 +84,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-all duration-300 animate-bubble-in [animation-delay:300ms] hover:animate-float hover:shadow-2xl hover:scale-105 hover:-translate-y-2">
               <CardHeader>
                 <CardTitle className="text-2xl">For Investors</CardTitle>
               </CardHeader>
