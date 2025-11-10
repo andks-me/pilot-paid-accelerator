@@ -78,8 +78,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  Access vetted innovative solutions and fast-track pilot programs with 
-                  proven startups ready for deployment.
+                  De-risked innovation: pre-vetted startups mapped to your use-cases; clear ROI.
                 </CardDescription>
               </CardContent>
             </Card>
