@@ -17,3 +17,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
+// Trigger GitHub Pages build with GitHub Actions
