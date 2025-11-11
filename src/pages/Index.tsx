@@ -3,6 +3,9 @@ import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import logo from "@/assets/quant-logo.jpg";
+import investmentGrowth from "@/assets/investment-growth.png";
+import pipelineFunnel from "@/assets/pipeline-funnel.png";
+import roiMetrics from "@/assets/roi-metrics.png";
 
 const Index = () => {
   return (
@@ -14,7 +17,7 @@ const Index = () => {
               <img 
                 src={logo} 
                 alt="QUANT XLR8" 
-                className="h-12 w-auto"
+                className="h-12 w-auto rounded-lg bg-white/80 p-1"
               />
               <p className="text-sm font-medium text-muted-foreground">
                 From Pilot to Paid Deployment in 90 Days
@@ -87,10 +90,27 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="text-2xl">For Investors</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <CardDescription className="text-base">
                   Proprietary pipeline from enterprise-validated problem statements and pilots.
                 </CardDescription>
+                <div className="grid grid-cols-2 gap-3 pt-4">
+                  <img 
+                    src={investmentGrowth} 
+                    alt="Investment Growth Chart" 
+                    className="rounded-lg w-full h-24 object-cover border border-border"
+                  />
+                  <img 
+                    src={roiMetrics} 
+                    alt="ROI Metrics Dashboard" 
+                    className="rounded-lg w-full h-24 object-cover border border-border"
+                  />
+                </div>
+                <img 
+                  src={pipelineFunnel} 
+                  alt="Pipeline Funnel" 
+                  className="rounded-lg w-full h-32 object-cover border border-border"
+                />
               </CardContent>
             </Card>
           </section>
