@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,9 +24,19 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          cname: false
+      - name: Copy dist to root
+        run: |
+          cp -r dist/* .
+          # Keep important files
+          git checkout .gitignore README.md
+      
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+      
+      - name: Commit and push
+        run: |
+          git add -A
+          git commit -m "Deploy: Update site from dist/" || true
+          git push
