@@ -6,6 +6,8 @@ import logo from "@/assets/quant-logo.jpg";
 import investmentGrowth from "@/assets/investment-growth.png";
 import pipelineFunnel from "@/assets/pipeline-funnel.png";
 import roiMetrics from "@/assets/roi-metrics.png";
+import developersCoding from "@/assets/developers-coding.png";
+import corporateMeeting from "@/assets/corporate-meeting.png";
 
 const Index = () => {
   return (
@@ -17,7 +19,7 @@ const Index = () => {
               <img 
                 src={logo} 
                 alt="QUANT XLR8" 
-                className="h-12 w-auto rounded-lg bg-white/80 p-1"
+                className="h-12 w-auto rounded-lg"
               />
               <p className="text-sm font-medium text-muted-foreground">
                 From Pilot to Paid Deployment in 90 Days
@@ -67,11 +69,16 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="text-2xl">For Startups</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <CardDescription className="text-base">
                   We act as a global bridge between startups and corporates, delivering 
                   strategically aligned matches.
                 </CardDescription>
+                <img 
+                  src={developersCoding} 
+                  alt="Developers coding together" 
+                  className="rounded-lg w-full h-48 object-cover border border-border"
+                />
               </CardContent>
             </Card>
 
@@ -79,10 +86,15 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="text-2xl">For Corporates</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <CardDescription className="text-base">
                   De-risked innovation: pre-vetted startups mapped to your use-cases; clear ROI.
                 </CardDescription>
+                <img 
+                  src={corporateMeeting} 
+                  alt="Corporate meeting" 
+                  className="rounded-lg w-full h-48 object-cover border border-border"
+                />
               </CardContent>
             </Card>
 
